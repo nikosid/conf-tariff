@@ -5156,7 +5156,7 @@ table.t-forecast tr.active td:first-child {
   color: #7676FF;
 }
 .tariff-card-description li {
-    word-break: break-all;
+    word-break: break-word;
 }
 .tariff-posts-social .tariff-card-price {
     margin-top: 23px;
