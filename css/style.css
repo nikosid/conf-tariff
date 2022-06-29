@@ -5514,6 +5514,7 @@ table.t-forecast tr.active td:first-child {
   line-height: 140%;
   color: #FFFFFF;
   align-items: center;
+  text-decoration: none;
 }
 .tariff-cblock-1 span {
   padding-left: 10px;
