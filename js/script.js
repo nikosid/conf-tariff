@@ -158,7 +158,6 @@ for (let i=0; i<btnsTariff.length;i++) {
     event.preventDefault();
     let formData = new FormData(form);
     let request = new XMLHttpRequest();
-    //request.open('POST', '/tariff/mail.php', true);
     request.open('POST', '/tariff/mail.php', true);
     request.send(formData);
     request.addEventListener('readystatechange', function() {
@@ -341,7 +340,3 @@ for (let i=0; i<btnsTariff.length;i++) {
    
 
 }
-
-
-
-
