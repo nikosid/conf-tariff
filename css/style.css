@@ -5488,6 +5488,7 @@ table.t-forecast tr.active td:first-child {
   max-width: 325px;
   width: 100%;
   padding-left: 48px;
+  text-decoration: none;
 }
 .tariff-cblock-contact::before {
   content: '';
