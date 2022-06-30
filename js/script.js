@@ -340,3 +340,10 @@ for (let i=0; i<btnsTariff.length;i++) {
    
 
 }
+
+$( document ).ready(function() {
+    $('[data-fancybox="gallery"]').fancybox({
+		loop: true,
+		autoFocus: false
+	});
+});
