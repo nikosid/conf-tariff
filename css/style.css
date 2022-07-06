@@ -5960,6 +5960,8 @@ table.t-forecast tr.active td:first-child {
 .tariff-stat-item-img {
 	position: relative;
 	display: block;
+	border-radius: 30px;
+    overflow: hidden;
 }
 .tariff-stat-item-img:hover::after {
 	position: absolute;
