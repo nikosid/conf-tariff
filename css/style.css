@@ -54,9 +54,36 @@ div {
 	bottom: 0;
 	right: 0;
 }
+.batt-img {
+	margin-left: 19px;
+	font-weight: 700;
+	font-size: 14px;
+	line-height: 120%;
+	text-align: center;
+	color: #1DB3BC;
+	position: relative;
+	padding: 0 27px;
+}
+.batt-img:before {
+	content: url(../images/batt-img.svg);
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.batt-img:after {
+	content: url(../images/batt-img.svg);
+	position: absolute;
+	top: 0;
+	transform: scale(-1, 1);
+	right: 0;
+}
 @media (max-width: 768px) {
 	.tariff-info-right-block {
 		max-width: 360px;
+	}
+	.batt-img {
+	    	margin-left: 13px;
+	    	font-size: 13px;
 	}
 }
 /*SV*/
