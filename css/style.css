@@ -27,6 +27,40 @@ div {
   color: #FFFFFF;
 }
 
+/*SV*/
+.sv-tariff-info-right-block-info {
+	font-weight: 600;
+	font-size: 18px;
+	line-height: 22px;
+}
+.sv-tariff-info-right-block-dop {
+	font-size: 20px;
+	line-height: 140%;
+	margin-top: 15px;
+	z-index: 1;
+	position: relative;
+}
+.sv-tariff-info-right-block-dop span {
+	background: #7676FF;
+	display: inline-block;
+	margin-top: 2px;
+	padding: 0 8px;
+}
+.tariff-info-right-block {
+	position: relative;
+}
+.nag {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+}
+@media (max-width: 768px) {
+	.tariff-info-right-block {
+		max-width: 360px;
+	}
+}
+/*SV*/
+
 /* preloader css */
 .loader {
   background: rgba(0, 0, 0, 0.7);
