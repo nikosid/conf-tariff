@@ -77,6 +77,13 @@ div {
 	transform: scale(-1, 1);
 	right: 0;
 }
+.sv-logo {
+  margin-left: 79px;
+}
+.sv-logo img {
+  width: 180px;
+  height: 55px;
+}
 @media (max-width: 768px) {
 	.tariff-info-right-block {
 		max-width: 360px;
@@ -84,6 +91,16 @@ div {
 	.batt-img {
 	    	margin-left: 13px;
 	    	font-size: 13px;
+	}
+	.sv-logo1 {
+	    width: 72px;
+	}
+	.sv-logo {
+	    margin-left: 37px;
+	}
+	.sv-logo img {
+	    width: 100px;
+	    height: auto;
 	}
 }
 /*SV*/
