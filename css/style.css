@@ -84,7 +84,7 @@ div {
 	width: 108px;
 }
 .tariff-card {
-    height: 341px;
+    height: 341px!important;
 }
 .sv-tariff-card .tariff-card-description {
   flex-grow: 1;
