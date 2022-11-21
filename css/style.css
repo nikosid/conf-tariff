@@ -130,10 +130,6 @@ div {
 	    display: block!important;
 	    margin: 23px 0 19px 0!important;
 	  }
-	  .sv-tariff-card .tariff-card-bottom {
-	    flex-wrap: wrap;
-	    justify-content: center;
-	  }
 }
 /*SV*/
 
