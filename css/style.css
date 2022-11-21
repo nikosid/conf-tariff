@@ -83,6 +83,25 @@ div {
 .sv-logo1 {
 	width: 108px;
 }
+.tariff-card {
+    height: 341px;
+}
+.sv-tariff-card .tariff-card-description {
+  flex-grow: 1;
+}
+.sv-tariff-card .tariff-card-description ul {
+  margin-bottom: 0;
+  padding-left: 18px;
+}
+.sv-tariff-card .tariff-card-description ul li {
+  margin-bottom: 15px;
+}
+.sv-tariff-card .tariff-card-description ul li:last-child {
+  margin-bottom: 0;
+}
+.sv-tariff-card .tariff-card-price {
+  margin: 0 0 0 46px!important;
+}
 @media (max-width: 768px) {
 	.tariff-info-right-block {
 		max-width: 360px;
@@ -100,6 +119,16 @@ div {
 	.sv-logo img {
 	    width: 100px;
 	    height: auto;
+	}
+	.sv-tariff-card {
+	    height: auto!important;
+	}
+	.sv-tariff-card .tariff-card-bottom .tariff-card-price {
+	    display: none;
+	}
+	.sv-tariff-card .d-none {
+	    display: block!important;
+	    margin: 23px 0 19px 0!important;
 	}
 }
 /*SV*/
