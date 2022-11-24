@@ -1,0 +1,118 @@
+.tariff-projects {
+    margin-top: 126px;
+}
+
+@media (max-width: 500px) {
+    .tariff-projects {
+       margin: 69px 0;
+    }
+}
+
+.tariff-projects-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.tariff-projects-wrapper::before,
+    .tariff-projects-wrapper:after {
+        width: 24%;
+        content:'';
+        height: 0;
+        order: 1;
+    }
+
+.tariff-project {
+    display: block;
+    width: 24%;
+    text-decoration: none;
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    border-radius: 5px;
+    height: 170px;
+    padding: 14px 28px;
+    position: relative;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+@media (max-width: 1199px) {
+    .tariff-project {
+        width: 32%;
+    }
+    .tariff-projects-wrapper::before,
+    .tariff-projects-wrapper:after {
+        width: 32%;
+    }
+}
+
+@media (max-width: 620px) {
+    .tariff-project {
+        width: 49%;
+        margin-bottom: 10px;
+    }
+    .tariff-projects-wrapper::before,
+    .tariff-projects-wrapper:after {
+        width: 49%;
+    }
+}
+
+@media (max-width: 500px) {
+    .tariff-project {
+        height: 90px;
+        padding: 9px 15px;
+    }
+} 
+
+.tariff-project svg {
+    position: absolute;
+    top: 15px;
+    right: 16px;
+}
+
+@media (max-width: 500px) {
+    .tariff-project svg  {
+        width: 10px;
+        height: 10px;
+        top: 8px;
+        right: 7px;
+    }
+} 
+
+.tariff-project__title {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 140%;
+    color: #778096;
+}
+
+@media (max-width: 500px) {
+    .tariff-project__title {
+        font-size: 12px;
+    }
+}
+
+.tariff-project__logo {
+    height: 102px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media (max-width: 500px) {
+    .tariff-project__logo {
+        height: 53px;
+    }
+    .tariff-project__logo img {
+        max-height: 100%;
+        transform: scale(0.7);
+    }
+}
+
+.tariff-project:hover {
+    border: 1px solid #7676FF;
+    transition: 0.5s;
+}
+
+.tariff-project:hover svg path {
+    fill: #7676FF;
+}
