@@ -83,8 +83,9 @@ div {
 .sv-logo1 {
 	width: 108px;
 }
-.tariff-posts-social .tariff-card {
-  height: 341px!important;
+.sv-tariff-card {
+  height: 385px!important;
+  padding: 38px 25px 47px 30px!important;
 }
 .sv-tariff-card .tariff-card-description {
   flex-grow: 1;
@@ -99,8 +100,122 @@ div {
 .sv-tariff-card .tariff-card-description ul li:last-child {
   margin-bottom: 0;
 }
-.sv-tariff-card .tariff-card-price {
-  margin: 0 0 0 46px!important;
+.sv-social-icon {
+  margin-top: 10px;
+}
+.sv-social-icon a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  color: #7676FF;
+}
+.sv-border {
+  width: 361px;
+  height: 50px;
+  border: double 2px transparent;
+  border-radius: 10px;
+  background-image: linear-gradient(#010102, #010102), radial-gradient(circle at top left, #14868F, #263675);
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+  position: absolute;
+  z-index: -1;
+}
+.sv-social-icon a img {
+  margin-right: 19px;
+}
+.sv-bg-tariff-card {
+  position: relative;
+  z-index: 1;
+}
+.sv-bg-tariff-card:before {
+  content: '';
+  z-index: -1;
+  position: absolute;
+  left: 0;
+  width: 100%;
+  top: 15px;
+  background-image: url(../images/back-ttl.png);
+  background-repeat: no-repeat;
+  height: 100%;
+  background-position: right top;
+}
+.sv-bg-tariff-card .tariff-card-description {
+  margin-top: 45px;
+}
+.sv-tariff-card .tariff-card-description {
+  width: 102%;
+}
+.sv-card-bottom {
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 15px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  margin-left: 24px;
+  position: relative;
+  width: 30%;
+}
+.sv-card-bottom:after {
+  content: url(../images/arrow-tell.svg);
+  position: absolute;
+  top: -25px;
+  right: 0;
+}
+.sv-card-bottom-mob {
+  display: none;
+}
+.sv-tariff-card-tell {
+  background-image: url(../images/front-tell.png);
+  position: absolute;
+  bottom: 0;
+  right: -5px;
+  background-repeat: no-repeat;
+  background-position: 50px 18px;
+}
+.sv-tariff-card-tell-in {
+  background-image: url(../images/back-tell.png);
+  background-repeat: no-repeat;
+  width: 211px;
+  height: 266px;
+}
+.sv-bg-tariff-card .speaker-item-video {
+  right: 0;
+  left: 24px;
+  margin: auto;
+  top: 0;
+  bottom: 0;
+}
+@media (max-width: 1120px) {
+  .sv-card-bottom-mob {
+    display: block;
+    margin-top: 5px;
+    position: relative;
+    max-width: 210px;
+  }
+  .sv-card-bottom-mob:after {
+    content: url(../images/arrow-tell.svg);
+    position: absolute;
+    top: -3px;
+    right: 0;
+    rotate: 45deg;
+  }
+  .sv-bg-tariff-card {
+    content-visibility: auto;
+  }
+  .sv-tariff-card-tell {
+    bottom: -60px;
+    right: -83px;
+  }
+  .sv-bg-tariff-card .speaker-item-video {
+    right: 128px;
+    left: auto;
+    top: 50px;
+    bottom: auto;
+  }
+  .sv-card-bottom {
+    display: none;
+  }
 }
 @media (max-width: 768px) {
 	.tariff-info-right-block {
@@ -121,15 +236,39 @@ div {
 	    height: auto;
 	}
 	.tariff-posts-social .sv-tariff-card {
-	    height: auto!important;
-	  }
-	  .sv-tariff-card .tariff-card-bottom .tariff-card-price {
-	    display: none;
-	  }
-	  .sv-tariff-card .d-none {
-	    display: block!important;
-	    margin: 23px 0 19px 0!important;
-	  }
+    height: auto!important;
+  }
+  .sv-tariff-card .tariff-card-bottom .tariff-card-price {
+    display: none;
+  }
+  .sv-tariff-card .d-none {
+    display: block!important;
+    margin: 23px 0 19px 0!important;
+  }
+  .sv-card-bottom-mob {
+    margin-top: 18px;
+    font-size: 12px;
+  }
+  .sv-card-bottom-mob:after {
+    right: 40px;
+  }
+  .sv-bg-tariff-card .speaker-item-video {
+    right: 137px;
+    width: 50px;
+    height: 50px;
+  }
+  .tariff-posts-social .tariff-card {
+    min-height: auto!important;
+  }
+}
+@media (max-width: 480px) {
+  .sv-border {
+    width: 292px;
+    height: 40px;
+  }
+  .sv-social-icon a {
+    font-size: 12px;
+  }
 }
 /*SV*/
 
@@ -5252,11 +5391,12 @@ table.t-forecast tr.active td:first-child {
 }
 .tariff-posts-social .tariff-card {
     height: 326px;
-    min-height: 291px;
+    min-height: 361px;
 }
 .tariff-posts-social .tariff-card-description {
     height: auto;
     margin-bottom: 0;
+    flex-grow: 1;
 }
 .tariff-posts-social .tariff-card-description a {
   color: #7676FF;
@@ -5266,7 +5406,7 @@ table.t-forecast tr.active td:first-child {
 }
 .tariff-posts-social .tariff-card-price {
     margin-top: 23px;
-    flex-grow: 1;
+    /*flex-grow: 1;*/
 }
 .tariff-media-promo {
     margin-bottom: 69px;
