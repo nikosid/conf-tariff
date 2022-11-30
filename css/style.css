@@ -102,6 +102,7 @@ div {
 }
 .sv-social-icon {
   margin-top: 10px;
+  margin-bottom: 10px;
 }
 .sv-social-icon a {
   display: flex;
@@ -201,7 +202,7 @@ div {
     rotate: 45deg;
   }
   .sv-bg-tariff-card {
-    content-visibility: auto;
+    overflow: hidden;
   }
   .sv-tariff-card-tell {
     bottom: -60px;
@@ -5160,6 +5161,7 @@ table.t-forecast tr.active td:first-child {
 .tariff-info {
     display: flex;
     margin-bottom: 100px;
+    align-items: flex-end;
 }
 .tariff-info-title {
     font-size: 32px;
