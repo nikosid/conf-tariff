@@ -116,3 +116,99 @@
 .tariff-project:hover svg path {
     fill: #7676FF;
 }
+
+.tariff-global {
+    margin-bottom: 70px;
+}
+
+.tariff-global-icons {
+    margin-bottom: 35px;
+    justify-content: space-between;
+}
+
+.tariff-global-icons a {
+    text-decoration: none;
+    display: block;
+}
+
+.tariff-global-icons a span {
+    display: block;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 140%;
+    color: #7676FF;
+    margin-top: 10px;
+}
+
+.tariff-global-cards .sv-tariff-card {
+    height: auto!important;
+}
+
+.tariff-global-cards .tariff-card-bottom {
+    justify-content: space-between;
+}
+
+.tariff-global-cards .tariff-card-bottom span {
+    max-width: 276px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 130%;
+    color: #FFFFFF;
+    display: block;
+}
+
+.tariff-posts-social .tariff-card-price {
+    font-size: 23px;
+}
+
+.tariff-posts-social .tariff-card-long {
+    height: 547px;
+    min-height: 540px;
+}
+
+@media (max-width: 1199px) {
+    .tariff-global-cards .tariff-card-bottom span {
+        max-width: 100%;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .tariff-global-cards .tariff-card-bottom {
+        flex-wrap: wrap;
+    }
+    .tariff-global-cards .tariff-card-bottom a {
+        order: 1;
+    }
+}
+
+@media (max-width: 991px) {
+    .tariff-global-icons {
+        flex-wrap: wrap;
+        margin-bottom: 0;
+    }
+    .tariff-global-icons a {
+        width: 30%;
+        margin-bottom: 26px;
+    }
+}
+
+@media (max-width: 650px) {
+    .tariff-global-icons a {
+        width: 46%;
+    }
+    .tariff-global-icons a span {
+        font-size: 12px;
+    }
+    .tariff-title-small {
+        font-size: 18px;
+        margin-bottom: 20px;
+    }
+    .tariff-special-project-info-title {
+        font-size: 18px;
+    }
+    .tariff-global-cards .tariff-card-bottom span {
+        font-size: 12px;
+    }
+    .tariff-global-cards .tariff-card-price {
+        margin-bottom: 6px;
+    }
+}

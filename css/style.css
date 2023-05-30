@@ -135,7 +135,7 @@ div {
   position: absolute;
   left: 0;
   width: 100%;
-  top: 15px;
+  top: 27px;
   background-image: url(../images/back-ttl.png);
   background-repeat: no-repeat;
   height: 100%;
@@ -5304,12 +5304,15 @@ table.t-forecast tr.active td:first-child {
     background: url(../images/bg-patch.png) repeat;
     border-radius: 30px;
     padding: 38px 36px 47px 36px;
+    min-height: 358px;
 }
 .tariff-card-title {
     font-size: 22px;
     font-weight: 600;
     line-height: 27px;
-    height: 54px;
+}
+.tariff-card-wrap {
+  height: 184px;
 }
 .tariff-card-description {
     font-size: 18px;
@@ -5317,10 +5320,13 @@ table.t-forecast tr.active td:first-child {
     color: #7676FF;
     margin-bottom: 22px;
     margin-top: 10px;
-    height: 50px;
+}
+.tariff-card-description p {
+  color: #7676FF;
 }
 .tariff-card-description a {
     text-decoration: none;
+    color: #7676FF;
 }
 .tariff-card-price {
     font-size: 26px;
@@ -5405,6 +5411,7 @@ table.t-forecast tr.active td:first-child {
 }
 .tariff-card-description li {
     word-break: break-word;
+    margin-bottom: 5px;
 }
 .tariff-posts-social .tariff-card-price {
     margin-top: 23px;
@@ -5778,6 +5785,7 @@ table.t-forecast tr.active td:first-child {
   margin-top: 6px;
   max-width: 98px;
 }
+
 @media (max-width: 1310px) {
     .tariff-cases {
         width: 100%;

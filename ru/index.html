@@ -16,8 +16,8 @@
     <link rel="stylesheet" href="../css/perfect-scrollbar.css">
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" integrity="sha512-H9jrZiiopUdsLpg94A333EfumgUBpO9MdbxStdeITo+KEIMaNfHNvwyjjDJb+ERPaRS6DpyRlKbvPUasNItRyw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="../css/style.css?v=202211301">
-    <link rel="stylesheet" href="../css/new.css">
+    <link rel="stylesheet" href="../css/style.css?v=202211302">
+    <link rel="stylesheet" href="../css/new.css?v=202211302">
 
 
     <link rel="preload" href="../fonts/Inter-Regular.woff2" as="font" type="font/woff2" crossorigin>
@@ -175,8 +175,10 @@
                         <div class="row gy-4 gx-4">
                             <div class="col-12 col-md-6 col-lg-4">
                                 <div class="tariff-card">
-                                    <div class="tariff-card-title">Полный обзор или Интервью проекта</div>
-                                    <div class="tariff-card-description"><a href="https://www.youtube.com/c/PROBLOCKCHAIN" target="_blank">YouTube</a> - <a href="https://www.youtube.com/c/PROBLOCKCHAIN" target="_blank">Pro blockchain main</a></div>
+                                    <div class="tariff-card-wrap">
+                                        <div class="tariff-card-title">Полный обзор или Интервью проекта</div>
+                                        <div class="tariff-card-description"><a href="https://www.youtube.com/c/PROBLOCKCHAIN" target="_blank">YouTube</a> - <a href="https://www.youtube.com/c/PROBLOCKCHAIN" target="_blank">Pro blockchain main</a></div>
+                                    </div>
                                     <div class="tariff-card-price">3500$</div>
                                     <div class="tariff-card-bottom">
                                         <a href="#!" class="art-button-4" data-bs-toggle="modal" data-bs-target="#appModal">Подать заявку</a>
@@ -186,8 +188,43 @@
                             </div>
                             <div class="col-12 col-md-6 col-lg-4">
                                 <div class="tariff-card">
-                                    <div class="tariff-card-title">Преролл <br />в прямом эфире</div>
-                                    <div class="tariff-card-description"><a href="https://www.youtube.com/c/PROBLOCKCHAIN" target="_blank">YouTube</a> - <a href="https://www.youtube.com/c/PROBLOCKCHAIN" target="_blank">Pro blockchain main</a></div>
+                                    <div class="tariff-card-wrap">
+                                        <div class="tariff-card-title">Персональный обзор + Пост в Телеграм + Кружок в Телеграм</div>
+                                        <div class="tariff-card-description">
+                                            <a href="https://www.youtube.com/c/PROBLOCKCHAIN" target="_blank">YouTube - Pro blockchain main</a>
+                                            <a href="#" target="_blank">Telegram - Pro blockchain main</a>
+                                        </div>
+                                    </div>
+                                    <div class="tariff-card-price">6500$</div>
+                                    <div class="tariff-card-bottom">
+                                        <a href="#!" class="art-button-4" data-bs-toggle="modal" data-bs-target="#appModal">Подать заявку</a>
+                                        <a  href="#video-1" data-bs-toggle="modal" data-tagvideo="https://www.youtube.com/embed/I_nAQtxi8k8" data-bs-target="#videoModal" class="tariff-card-example-btn"><span class="sp-block__more">Пример</span></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6 col-lg-4">
+                                <div class="tariff-card">
+                                    <div class="tariff-card-wrap">
+                                        <div class="tariff-card-title">Интервью с проектом + Пост в Телеграм</div>
+                                        <div class="tariff-card-description">
+                                            <a href="https://www.youtube.com/c/PROBLOCKCHAIN" target="_blank">YouTube - Pro blockchain main</a>
+                                            <a href="#" target="_blank">Telegram - Pro blockchain main</a>
+                                        </div>
+                                    </div>
+                                    <div class="tariff-card-price">5000$</div>
+                                    <div class="tariff-card-bottom">
+                                        <a href="#!" class="art-button-4" data-bs-toggle="modal" data-bs-target="#appModal">Подать заявку</a>
+                                        <a  href="#video-1" data-bs-toggle="modal" data-tagvideo="https://www.youtube.com/embed/I_nAQtxi8k8" data-bs-target="#videoModal" class="tariff-card-example-btn"><span class="sp-block__more">Пример</span></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6 col-lg-4">
+                                <div class="tariff-card">
+                                    <div class="tariff-card-wrap">
+                                        <div class="tariff-card-title">Преролл <br />в прямом эфире</div>
+                                        <div class="tariff-card-description"><a href="https://www.youtube.com/c/PROBLOCKCHAIN" target="_blank">YouTube</a> - <a href="https://www.youtube.com/c/PROBLOCKCHAIN" target="_blank">Pro blockchain main</a></div>
+                                    </div>
+
                                     <div class="tariff-card-price">1500$</div>
                                     <div class="tariff-card-bottom">
                                         <a href="#!" class="art-button-4" data-bs-toggle="modal" data-bs-target="#appModal">Подать заявку</a>
@@ -197,8 +234,15 @@
                             </div>
                             <div class="col-12 col-md-6 col-lg-4">
                                 <div class="tariff-card">
-                                    <div class="tariff-card-title">Логотип на прямых эфирах на 30 дней</div>
-                                    <div class="tariff-card-description">Суммарно 8 видео в месяц + ссылка в описании</div>
+                                    <div class="tariff-card-wrap">
+                                        <div class="tariff-card-title">Логотип на прямых эфирах на 30 дней</div>
+                                        <div class="tariff-card-description">
+                                            <p>(Минимум 8 видео в месяц + ссылка в описании)</p>
+                                            
+                                            <a href="https://www.youtube.com/c/PROBLOCKCHAIN" target="_blank">YouTube - Pro blockchain main</a>
+                                            <a href="#" target="_blank">Telegram - Pro blockchain main</a>
+                                        </div>
+                                    </div>
                                     <div class="tariff-card-price">4000$</div>
                                     <div class="tariff-card-bottom">
                                         <a href="#!" class="art-button-4" data-bs-toggle="modal" data-bs-target="#appModal">Подать заявку</a>
@@ -208,8 +252,10 @@
                             </div>
                             <div class="col-12 col-md-6 col-lg-4">
                                 <div class="tariff-card">
-                                    <div class="tariff-card-title">Полный обзор или Интервью проекта</div>
-                                    <div class="tariff-card-description"><a href="https://www.youtube.com/channel/UCpf4lgYwAf6H0MfWTiyqVNw/featured" target="_blank">YouTube - Pro blockchain live</a></div>
+                                    <div class="tariff-card-wrap">
+                                        <div class="tariff-card-title">Полный обзор проекта</div>
+                                        <div class="tariff-card-description"><a href="https://www.youtube.com/channel/UCpf4lgYwAf6H0MfWTiyqVNw/featured" target="_blank">YouTube - PRO BLOCKCHAIN LIVE</a></div>
+                                    </div>
                                     <div class="tariff-card-price">3000$</div>
                                     <div class="tariff-card-bottom">
                                         <a href="#!" class="art-button-4" data-bs-toggle="modal" data-bs-target="#appModal">Подать заявку</a>
@@ -219,8 +265,10 @@
                             </div>
                             <div class="col-12 col-md-6 col-lg-4">
                                 <div class="tariff-card">
-                                    <div class="tariff-card-title">Преролл  <br />в прямом эфире</div>
-                                    <div class="tariff-card-description"><a href="https://www.youtube.com/channel/UCpf4lgYwAf6H0MfWTiyqVNw/featured" target="_blank">YouTube - Pro blockchain live</a></div>
+                                    <div class="tariff-card-wrap">
+                                        <div class="tariff-card-title">Преролл  <br />в прямом эфире</div>
+                                        <div class="tariff-card-description"><a href="https://www.youtube.com/channel/UCpf4lgYwAf6H0MfWTiyqVNw/featured" target="_blank">YouTube -  PRO BLOCKCHAIN LIVE</a></div>
+                                    </div>
                                     <div class="tariff-card-price">1200$</div>
                                     <div class="tariff-card-bottom">
                                         <a href="#!" class="art-button-4" data-bs-toggle="modal" data-bs-target="#appModal">Подать заявку</a>
@@ -278,19 +326,94 @@
                     <div class="tariff-special-project-card">
                         <div class="tariff-special-project-list">
                             <ul>
-                                <li>Обзор/Интервью проекта</li>
+                                <li>Персональный обзор проекта от Фаундеров PBM / Интервью проекта</li>
                                 <li>4 упоминания в прямом эфире 2-4 мин в месяц</li>
-                                <li>4 поста в телеграм Pro Blockchain в месяц</li>
                                 <li>Логотип на прямых эфирах на 30 дней</li>
-                                <li>4 поста в телеграм Crypto Trading в месяц</li>
+                                <li>4 поста в Telegram PRO BLOCKCHAIN в месяц</li>
+                                <li>4 поста в Telegram PRO CRYPTO TRADING в месяц</li>
+                                <li>Интеграция в МЕДИА БЛОКИ на 30 дней</li>
                             </ul>
                         </div>
                         <div class="tariff-special-project-info">
-                            <div class="tariff-special-project-info-title">Охват 300k-500k</div>
-                            <div class="tariff-special-project-info-price">20 000$</div>
+                            <div class="tariff-special-project-info-title">Охват: 500 000 - 1 000 000</div>
+                            <div class="tariff-special-project-info-price">25 000$</div>
                             <div class="tariff-card-bottom">
                                 <a href="#!" class="art-button-4" data-bs-toggle="modal" data-bs-target="#appModal">Подать заявку</a>
                                 <a  href="#video-1" data-bs-toggle="modal" data-tagvideo="https://www.youtube.com/embed/VSsMH-ZXNyc" data-bs-target="#videoModal" class="tariff-card-example-btn"><span class="sp-block__more">Пример</span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tariff-global">
+                    <div class="tariff-title-small">Глобальное продвижение</div>
+
+                    <div class="tariff-global-icons d-flex">
+                        <a href="#" target="_blank">
+                            <img src="../images/icons/global-icon-1.svg" alt="" />
+                            <span>YouTube <br /> PRO BLOCKCHAIN</span>
+                        </a>
+                        <a href="#" target="_blank">
+                            <img src="../images/icons/global-icon-1.svg" alt="" />
+                            <span>YouTube <br /> PRO BLOCKCHAIN LIVE</span>
+                        </a>
+                        <a href="#" target="_blank">
+                            <img src="../images/icons/global-icon-2.svg" alt="" />
+                            <span>Telegram <br /> PRO BLOCKCHAIN</span>
+                        </a>
+                        <a href="#" target="_blank">
+                            <img src="../images/icons/global-icon-2.svg" alt="" />
+                            <span>Telegram <br /> PRO CRYPTO TRADING</span>
+                        </a>
+                        <a href="#" target="_blank">
+                            <img src="../images/icons/global-icon-1.svg" alt="" />
+                            <span>YouTube <br /> Shorts</span>
+                        </a>
+                        <a href="#" target="_blank">
+                            <img src="../images/icons/global-icon-3.svg" alt="" />
+                            <span>Instagram <br /> Reels</span>
+                        </a>
+                        <a href="#" target="_blank">
+                            <img src="../images/icons/global-icon-4.svg" alt="" />
+                            <span>TikTok </span>
+                        </a>
+                    </div>
+
+                    <div class="tariff-global-cards row gy-4 gx-4">
+                        <div class="col-12 col-md-6 col-lg-6">
+                            <div class="tariff-card tariff-card-flex sv-tariff-card">
+                                <div class="tariff-card-title">Гарантированный охват 1.000.000+ просмотров</div>
+                                <div class="tariff-card-description">
+                                    <ul>
+                                        <li>Персональный обзор проекта от Фаундеров PBM / Интервью проекта </li>
+                                        <li>3 упоминания проекта на прямых эфирах </li>
+                                        <li>5 информационных постов Telegram PRO BLOCKCHAIN</li>
+                                        <li>Брендинг вертикального контента - TikTok / Shorts / Reels</li>
+                                    </ul>
+                                </div>
+                                <div class="tariff-card-price">50 000$ </div>
+                                <div class="tariff-card-bottom">
+                                    <a href="#!" class="art-button-4" data-bs-toggle="modal" data-bs-target="#appModal">Подать заявку</a>
+                                    <span>* Продвижение проекта длится до достижения гарантированного количества охватов</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-6">
+                            <div class="tariff-card tariff-card-flex sv-tariff-card">
+                                <div class="tariff-card-title">Гарантированный охват 3.000.000+ просмотров</div>
+                                <div class="tariff-card-description">
+                                    <ul>
+                                        <li>2 Персональных обзора проекта от Фаундеров PBM / Интервью проекта  </li>
+                                        <li>7 упоминания проекта на прямых эфирах </li>
+                                        <li>10 информационных постов Telegram PRO BLOCKCHAIN</li>
+                                        <li>Брендинг вертикального контента - TikTok / Shorts / Reels</li>
+                                    </ul>
+                                </div>
+                                <div class="tariff-card-price">100 000$ </div>
+                                <div class="tariff-card-bottom">
+                                    <a href="#!" class="art-button-4" data-bs-toggle="modal" data-bs-target="#appModal">Подать заявку</a>
+                                    <span>* Продвижение проекта длится до достижения гарантированного количества охватов</span>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -301,34 +424,70 @@
                     <div class="row gy-4 gx-4">
                         <div class="col-12 col-md-6 col-lg-4">
                             <div class="tariff-card tariff-card-flex">
-                                <div class="tariff-card-title">Пост в Telegram PRO BLOCKCHAIN</div>
+                                <div class="tariff-card-title">Пост в Telegram</div>
                                 <div class="tariff-card-description">
                                     <a href="https://ttttt.me/Pro_Blockchain" target="_blank">Telegram - PRO BLOCKCHAIN</a>
                                 </div>
-                                <div class="tariff-card-price">1500$</div>
+                                <div class="tariff-card-price">1500$ / за пост</div>
                                 <div class="tariff-card-bottom">
                                     <a href="#!" class="art-button-4" data-bs-toggle="modal" data-bs-target="#appModal">Подать заявку</a>
-				    <span class="batt-img">Лучший<br>канал <br>2022</span>
+				                    <span class="batt-img">Лучший<br>канал <br>2022</span>
                                 </div>
                             </div>
                         </div>
                         <div class="col-12 col-md-6 col-lg-4">
                             <div class="tariff-card tariff-card-flex">
-                                <div class="tariff-card-title">Пост + сторис Instagram (80к суммарно)</div>
+                                <div class="tariff-card-title">Серия постов в Telegram</div>
                                 <div class="tariff-card-description">
-                                    <a href="https://www.instagram.com/pro_blockchain/" target="_blank">
-                                        Instagram - PRO BLOCKCHAIN
-                                    </a>
+                                    <a href="https://ttttt.me/Pro_Blockchain" target="_blank">Telegram - PRO BLOCKCHAIN</a>
+                                </div>
+                                <div class="tariff-card-price">1000$ / за пост от 3 шт.</div>
+                                <div class="tariff-card-bottom">
+                                    <a href="#!" class="art-button-4" data-bs-toggle="modal" data-bs-target="#appModal">Подать заявку</a>
+				                    <span class="batt-img">Лучший<br>канал <br>2022</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-4">
+                            <div class="tariff-card tariff-card-flex">
+                                <div class="tariff-card-title">Серия постов в Telegram</div>
+                                <div class="tariff-card-description">
+                                    <a href="https://ttttt.me/Pro_Blockchain" target="_blank">Telegram - PRO BLOCKCHAIN</a>
+                                </div>
+                                <div class="tariff-card-price">700$ / за пост от 10 шт.</div>
+                                <div class="tariff-card-bottom">
+                                    <a href="#!" class="art-button-4" data-bs-toggle="modal" data-bs-target="#appModal">Подать заявку</a>
+				                    <span class="batt-img">Лучший<br>канал <br>2022</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-4">
+                            <div class="tariff-card tariff-card-flex">
+                                <div class="tariff-card-title">Пост в Telegram + Персонализированный кружок</div>
+                                <div class="tariff-card-description">
+                                    <a href="https://ttttt.me/Pro_Blockchain" target="_blank">Telegram - PRO BLOCKCHAIN</a>
                                 </div>
                                 <div class="tariff-card-price">2000$</div>
                                 <div class="tariff-card-bottom">
                                     <a href="#!" class="art-button-4" data-bs-toggle="modal" data-bs-target="#appModal">Подать заявку</a>
+				                    <span class="batt-img">Лучший<br>канал <br>2022</span>
                                 </div>
                             </div>
                         </div>
                         <div class="col-12 col-md-6 col-lg-4">
                             <div class="tariff-card tariff-card-flex">
-                                <div class="tariff-card-title">Пост в Twitter PRO BLOCKCHAIN</div>
+                                <div class="tariff-card-title">Пост по всем TG каналам</div>
+                                <div class="tariff-card-description"><a href="https://t.me/Pro_Blockchain" target="_blank">PRO BLOCKCHAIN</a>, <a href="https://t.me/PROBTRADING" target="_blank">PROCRYPTO TRADING</a>, <a href="https://t.me/pronfti" target="_blank">PRO NFT</a></div>
+                                <div class="tariff-card-price">2300$</div>
+                                <div class="tariff-card-bottom">
+                                    <a href="#!" class="art-button-4" data-bs-toggle="modal" data-bs-target="#appModal">Подать заявку</a>
+				                    <span class="batt-img">Лучший<br>канал <br>2022</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-4">
+                            <div class="tariff-card tariff-card-flex">
+                                <div class="tariff-card-title">Пост в Twitter</div>
                                 <div class="tariff-card-description">
                                     <a href="https://twitter.com/PRO_BLOCKCHAIN" target="_blank">
                                         Twitter - PRO BLOCKCHAIN
@@ -340,35 +499,67 @@
                                 </div>
                             </div>
                         </div>
+
+
+
+
                         <div class="col-12 col-md-6 col-lg-4">
-                            <div class="tariff-card tariff-card-flex">
-                                <div class="tariff-card-title">Пост по всем TG каналам</div>
-                                <div class="tariff-card-description"><a href="https://t.me/Pro_Blockchain" target="_blank">PRO BLOCKCHAIN</a>, <a href="https://t.me/PROBTRADING" target="_blank">PROCRYPTO TRADING</a>, <a href="https://t.me/pronfti" target="_blank">PRO NFT</a></div>
-                                <div class="tariff-card-price">2300$</div>
+                            <div class="tariff-card tariff-card-flex tariff-card-long">
+                                <div class="tariff-card-title">Пост в Telegram + Сторис в Instagram (60к суммарно)</div>
+                                <div class="tariff-card-description">
+                                    <a href="https://twitter.com/PRO_BLOCKCHAIN" target="_blank">
+                                        Twitter - PRO BLOCKCHAIN
+                                    </a><br />
+                                    <a href="https://www.instagram.com/pro_blockchain/" target="_blank">
+                                        Instagram - PRO BLOCKCHAIN
+                                    </a><br />
+                                    <a href="https://www.instagram.com/pro_blockchain/" target="_blank">
+                                        Instagram Максима
+                                    </a><br />
+                                    <a href="https://www.instagram.com/pro_blockchain/" target="_blank">
+                                        Instagram Вячеслава
+                                    </a>
+                                </div>
+                                <div class="tariff-card-price">2000$</div>
                                 <div class="tariff-card-bottom">
                                     <a href="#!" class="art-button-4" data-bs-toggle="modal" data-bs-target="#appModal">Подать заявку</a>
-				    <span class="batt-img">Лучший<br>канал <br>2022</span>
+				                    <span class="batt-img">Лучший<br>канал <br>2022</span>
                                 </div>
                             </div>
                         </div>
-			<div class="col-12 col-md-12 col-lg-8 d-none">
-                            <div class="tariff-card tariff-card-flex sv-tariff-card">
+			            <div class="col-12 col-md-6 col-lg-4">
+                            <div class="tariff-card tariff-card-flex tariff-card-long">
                                 <div class="tariff-card-title">Логотип на видео Shorts на 30 дней</div>
                                 <div class="tariff-card-description">
                                     <ul>
-                                        <li>Минимальное количество видео в месяц + ссылка в описании 15 шт</li>
-                                        <li>Минимальное количество постов при поддержке проекта + ссылка в телеграм 10 шт</li>
+                                        <li>Минимальное количество видео в месяц + ссылка в описании 15 шт
+                                        </li>
+                                        <li>Минимальное количество постов при поддержке проекта + ссылка в телеграм 10 шт 
+                                        </li>
                                         <li>Среднее кол-во просмотров и охвата - 150,000+</li>
                                     </ul>
                                 </div>
                                 <div class="tariff-card-price d-none">10 000$</div>
                                 <div class="tariff-card-bottom">
                                     <a href="#!" class="art-button-4" data-bs-toggle="modal" data-bs-target="#appModal">Подать заявку</a>
-                                    <a href="images/sv-photo.jpg" data-fancybox="" class="tariff-card-example-btn"><span class="sp-block__more">Пример</span></a>
-                                    <div class="tariff-card-price">10 000$</div>
+                                   
                                 </div>
                             </div>
                         </div>
+                        <div class="col-12 col-md-6 col-lg-4">
+                            <div class="tariff-card tariff-card-flex tariff-card-long sv-bg-tariff-card">
+                                <div class="tariff-card-title sv-tariff-card-title">Сквозной брендинг:<br> YouTube + Instagram + TikTok + Telegram</div>
+                                <div class="tariff-card-description">Охват более 1 миллиона человек</div>
+                              
+                                <div class="tariff-card-price">15 000$ / 30 дней</div>
+                                <div class="tariff-card-bottom">
+                                    <a href="#!" class="art-button-4" data-bs-toggle="modal" data-bs-target="#appModal">Подать заявку</a>
+                                    <a href="#video-1" data-bs-toggle="modal" data-tagvideo="https://www.youtube.com/embed/M2NJY81wyVA" data-bs-target="#videoModal" class="tariff-card-example-btn"><span class="sp-block__more">Пример</span></a>
+                                </div>
+                               
+                            </div>
+                        </div>
+
                         <div class="col-12 col-md-6 col-lg-4">
                             <div class="tariff-card tariff-card-flex">
                                 <div class="tariff-card-title">Ваш логотип на reels<br> и stories в Instagram</div>
@@ -389,41 +580,8 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-12 col-md-6 col-lg-6">
-                            <div class="tariff-card tariff-card-flex sv-tariff-card">
-                                <div class="tariff-card-title">Ваш логотип на видео shorts в YouTube <br>на канале PRO BLOCKCHAIN</div>
-                                <div class="tariff-card-description">
-                                    <ul>
-                                        <li><a href="https://www.youtube.com/@problockchainmedia-live/shorts" target="_blank">Более 15 видео с Вашим лого + ссылка в описании</a></li>
-                                        <li><a href="https://t.me/Pro_Blockchain" target="_blank">Публикация 10 постов в телеграм PRO BLOCKCHAIN с пометкой проекта-партнера + ссылка</a></li>
-                                    </ul>
-                                </div>
-                                <div class="tariff-card-price">10 000$ / 30 дней</div>
-                                <div class="tariff-card-bottom">
-                                    <a href="#!" class="art-button-4" data-bs-toggle="modal" data-bs-target="#appModal">Подать заявку</a>
-                                    <a href="images/sv-photo.jpg" data-fancybox="" class="tariff-card-example-btn"><span class="sp-block__more">Пример</span></a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-12 col-md-6 col-lg-6">
-                            <div class="tariff-card tariff-card-flex sv-tariff-card sv-bg-tariff-card">
-                                <div class="tariff-card-title sv-tariff-card-title">Сквозной брендинг:<br> YouTube + Instagram + TikTok + Telegram</div>
-                                <div class="tariff-card-description">Охват более 1 миллиона человек</div>
-                                <div class="sv-card-bottom-mob">Пример видео<br>120,000 просмотров</div>
-                                <div class="tariff-card-price">15 000$ / 30 дней</div>
-                                <div class="tariff-card-bottom">
-                                    <a href="#!" class="art-button-4" data-bs-toggle="modal" data-bs-target="#appModal">Подать заявку</a>
-                                    <div class="sv-card-bottom">Пример видео<br>120,000 просмотров</div>
-                                </div>
-                                <div class="sv-tariff-card-tell">
-                                    <div class="sv-tariff-card-tell-in">
-                                        <a href="https://cuti.cc/2Ja9x" target="_blank">
-                                            <div class="play speaker-item-video"></div>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                        
+                        
                     </div>
                 </div>
 
