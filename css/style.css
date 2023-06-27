@@ -5786,6 +5786,10 @@ table.t-forecast tr.active td:first-child {
   max-width: 98px;
 }
 
+.tariff-card-disclaimer {
+  font-size: 14px;
+}
+
 @media (max-width: 1310px) {
     .tariff-cases {
         width: 100%;
@@ -6259,6 +6263,11 @@ table.t-forecast tr.active td:first-child {
 	.tariff-stat .row {
 		row-gap: 30px;
 	}
+  .tariff-card-disclaimer {
+    font-size: 12px;
+  }
 }
+
+
 
 /*# sourceMappingURL=style.css.map */
