@@ -6107,6 +6107,12 @@ table.t-forecast tr.active td:first-child {
     .tariff-cases-description {
         padding-left: 15px;
     }
+    .tariff-card-wrap {
+      height: auto;
+    }
+    .tariff-card {
+      min-height: 200px;
+    }
 }
 @media (max-width: 480px) {
     .tariff-info-social-item:nth-child(4n) {

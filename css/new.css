@@ -166,6 +166,16 @@
     min-height: 540px;
 }
 
+.tariff-stat.tariff-stat-tg {
+    margin-top: 0;
+}
+
+.tariff-stat-tg .tariff-stat-item-img:hover::after,
+.tariff-stat-tg .tariff-stat-item,
+.tariff-stat-tg .tariff-stat-item-img {
+    border-radius: 10px;
+}
+
 @media (max-width: 1199px) {
     .tariff-global-cards .tariff-card-bottom span {
         max-width: 100%;
@@ -188,6 +198,22 @@
     .tariff-global-icons a {
         width: 30%;
         margin-bottom: 26px;
+    }
+    .tariff-stat {
+        margin-bottom: 70px;
+    }
+    .tariff-stat.tariff-stat-tg {
+        margin-top: 0;
+    }
+   
+}
+
+@media (max-width: 767px) {
+    .tariff-posts-social .tariff-card-long {
+        height: auto;
+    }
+    .sv-bg-tariff-card:before {
+        top: 5px;
     }
 }
 
