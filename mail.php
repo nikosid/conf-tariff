@@ -106,3 +106,34 @@ $mail->msgHTML($body);
 if ($mail->send()) {$result = "success";} 
 else {$result = "error";}
 
+/* unisender */ 
+
+$api_key = '6rhfdo8myeiengg94xz7yt56fe37qtci3c7yuche'; 
+$list_ids = '110'; 
+$tags = 'from site'; 
+$double_optin = 0;
+$overload = 0; 
+$email_fo = $_POST["email"];
+$phone_un = $_POST["phone"];
+$name_un = $_POST["username"];
+
+$subscribe = array (    
+  'api_key' => $api_key,
+  'list_ids' => $list_ids,
+  'double_optin' => $double_optin,
+  'fields[tags]' => $tags,
+  'fields[email]' => $email_fo,
+  'fields[phone]' => $phone_un,
+  'fields[name]' => $name_un,
+  'fields[overload]' => $overload,
+);
+ 
+// Устанавливаем соединение
+$ch = curl_init();
+curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+curl_setopt($ch, CURLOPT_POST, 1);
+curl_setopt($ch, CURLOPT_POSTFIELDS, $subscribe); 
+curl_setopt($ch, CURLOPT_TIMEOUT, 10);
+curl_setopt($ch, CURLOPT_URL,
+            'https://api.unisender.com/ru/api/subscribe?format=json'); 
+$results = curl_exec($ch);
