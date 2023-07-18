@@ -143,10 +143,8 @@ for (let i=0; i<btnsTariff.length;i++) {
         let formname = this.closest('.tariff-card');
         if(formname) {
           formname = formname.querySelector('.tariff-card-title').innerHTML;
-          formnameValueTariff.value = 'Страница Тарифы. ' + formname;
-        } else {
-          formnameValueTariff.value = 'Страница Тарифы. Специальный проект';
-        }
+          formnameValueTariff.value = formname;
+        } 
         
     });
 }

@@ -110,12 +110,13 @@ else {$result = "error";}
 
 $api_key = '6rhfdo8myeiengg94xz7yt56fe37qtci3c7yuche'; 
 $list_ids = '110'; 
-$tags = 'from site'; 
+$tags = ''; 
 $double_optin = 0;
 $overload = 0; 
 $email_fo = $_POST["email"];
 $phone_un = $_POST["phone"];
 $name_un = $_POST["username"];
+$form_name = $_POST["form-name"];
 
 $subscribe = array (    
   'api_key' => $api_key,
@@ -124,7 +125,8 @@ $subscribe = array (
   'fields[tags]' => $tags,
   'fields[email]' => $email_fo,
   'fields[phone]' => $phone_un,
-  'fields[name]' => $name_un,
+  'fields[Name]' => $name_un,
+  'fields[formid]' => $form_name,
   'fields[overload]' => $overload,
 );
  
