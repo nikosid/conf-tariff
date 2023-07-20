@@ -51,7 +51,7 @@ $mail->SMTPDebug = 0;
 $mail->Host = 'ssl://smtp.jino.ru';
 $mail->Port = 465;
 $mail->Username = 'info@bitinvestconf.com';
-$mail->Password = 'pvkqQhnum94G';
+$mail->Password = '63UMdfWWGadz';
 
 $mail->setFrom('no-reply@bitinvestconf.com', 'PRO BLOCKCHAIN CONF');	
 
