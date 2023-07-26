@@ -57,7 +57,6 @@ $mail->setFrom('ProBlockchaininvest@yandex.ru', 'PRO BLOCKCHAIN CONF');
 
 if($_POST['mail-group'] == 'mail-group-1') {
 	//почта форма партнеры
-	$mail->AddAddress('natalipbm@gmail.com');
 	$mail->AddAddress('gptvinccorp@gmail.com');
 } else {
 	//почта форма спонсоров
