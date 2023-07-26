@@ -48,12 +48,13 @@ $mail->isSMTP();
 $mail->SMTPAuth = true;
 $mail->SMTPDebug = 0;
 
-$mail->Host = 'ssl://smtp.jino.ru';
+$mail->Host = 'ssl://smtp.yandex.ru';
 $mail->Port = 465;
-$mail->Username = 'info@bitinvestconf.com';
-$mail->Password = 'pvkqQhnum94G';
+$mail->SMTPAuth = true;
+$mail->Username = 'ProBlockchaininvest@yandex.ru';
+$mail->Password = '';
 
-$mail->setFrom('no-reply@bitinvestconf.com', 'PRO BLOCKCHAIN CONF');	
+$mail->setFrom('ProBlockchaininvest@yandex.ru', 'PRO BLOCKCHAIN CONF');	
 
 if($_POST['mail-group'] == 'mail-group-1') {
 	//почта форма партнеры
