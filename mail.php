@@ -50,8 +50,8 @@ $mail->SMTPDebug = 0;
 
 $mail->Host = 'ssl://smtp.yandex.ru';
 $mail->Port = 465;
-$mail->Username = 'info@bitinvestconf.com';
-$mail->Password = 'pvkqQhnum94G';
+$mail->Username = 'ProBlockchaininvest@yandex.ru';
+$mail->Password = 'password';
 
 $mail->setFrom('ProBlockchaininvest@yandex.ru', 'PRO BLOCKCHAIN CONF');	
 
