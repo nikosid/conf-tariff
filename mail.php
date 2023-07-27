@@ -65,7 +65,7 @@ if($_POST['mail-group'] == 'mail-group-1') {
 //почта общая
 $mail->AddAddress('orenlr56@yandex.ru');
 
-$mail->Subject = 'Заявка с сайта PRO BLOCKCHAIN CONF';
+$mail->Subject = 'Заявка с сайта pro-blockchain.com/tariff/';
 
 foreach ( $_POST as $key => $value ) {
 	if ( $value != "") {
