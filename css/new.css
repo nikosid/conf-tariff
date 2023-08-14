@@ -121,6 +121,10 @@
     margin-bottom: 70px;
 }
 
+.tariff-publics {
+    margin-bottom: 70px;
+}
+
 .tariff-global-icons {
     margin-bottom: 35px;
     justify-content: space-between;
@@ -237,4 +241,51 @@
     .tariff-global-cards .tariff-card-price {
         margin-bottom: 6px;
     }
+}
+
+.tariff-list {
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    max-width: 390px;
+}
+
+.tariff-list a {
+    text-decoration: underline;
+}
+
+.tariff-list a:hover {
+    text-decoration: none;
+}
+
+.tariff-list .counts {
+    color: #A7A7A7;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 140%; 
+}
+
+.tariff-list .counts img {
+    margin-right: 7px;
+}
+
+@media (max-width: 768px) {
+    .tariff-list .counts {
+        font-size: 14px;
+    } 
+    .tariff-list .counts img {
+        margin-right: 4px;
+    }
+}
+
+.tariff-publics .tariff-card-description {
+    margin-top: 20px;
+}
+
+.tariff-publics-cards .sv-tariff-card {
+    height: 100%!important;
+}
+
+.tariff-publics-cards .tariff-card-description ul li {
+    margin-bottom: 8px;
 }
