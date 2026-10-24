@@ -1,6 +1,9 @@
 <?php
 
 $errors = false;
+$result = [];
+$message = '';
+$c = false;
 
 if ((isset($_POST['username'])) && (!empty($_POST["username"]))) {
     $result['username'] = 'is-valid';
@@ -31,7 +34,7 @@ if ($errors) {
     echo json_encode($result);
 }
 
-if ($_POST['name'] != '') die('spam');
+if (($_POST['name'] ?? '') != '') die('spam');
 
 
 use PHPMailer\PHPMailer\PHPMailer;
@@ -60,7 +63,7 @@ if (file_exists(__DIR__ . '/config.local.php')) {
 
 $mail->setFrom('ProBlockchaininvest@yandex.ru', 'PRO BLOCKCHAIN CONF');
 
-if ($_POST['mail-group'] === 'mail-group-1') {
+if (($_POST['mail-group'] ?? '') === 'mail-group-1') {
     //почта форма партнеры
     $mail->AddAddress('gptvinccorp@gmail.com');
 } else {
@@ -121,9 +124,9 @@ $tags = '';
 $double_optin = 3;
 $overload = 0;
 $email_fo = $_POST["email"];
-$phone_un = $_POST["phone"];
+$phone_un = $_POST["phone"] ?? '';
 $name_un = $_POST["username"];
-$form_name = $_POST["form-name"];
+$form_name = $_POST["form-name"] ?? '';
 
 $subscribe = [
     'api_key' => $api_key,

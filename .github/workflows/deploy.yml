@@ -6,6 +6,7 @@ on:
 
 jobs:
   deploy:
+    if: ${{ vars.PHP85_DEPLOY_ENABLED == 'true' }}
     runs-on: ubuntu-latest
 
     steps:
@@ -18,4 +19,4 @@ jobs:
           host: ${{ secrets.HOST }}
           username: ${{ secrets.USERNAME }}
           key: ${{ secrets.KEY }}
-          script: cd ${{ secrets.REMOTE_TARGET }} && git pull
+          script: cd ${{ secrets.REMOTE_TARGET }} && git pull --ff-only

@@ -1,0 +1,24 @@
+name: PHP 8.5 checks
+
+on:
+  pull_request:
+  push:
+    branches: ['codex/**']
+
+permissions:
+  contents: read
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: shivammathur/setup-php@v2
+        with:
+          php-version: '8.5.12'
+          extensions: curl, mbstring, openssl
+          coverage: none
+          tools: composer:v2
+      - name: Lint PHP including dependencies
+        run: find . -path './.git' -prune -o -name '*.php' -print0 | xargs -0 -r -n1 php -d error_reporting=32767 -l
+      - run: php -d error_reporting=32767 tests/php85-smoke.php
